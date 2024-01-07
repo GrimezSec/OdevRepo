@@ -1,0 +1,17 @@
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\bin\Debug\AkinNTPOdev.exe.config
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\bin\Debug\AkinNTPOdev.exe
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\bin\Debug\AkinNTPOdev.pdb
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\obj\Debug\AkinNTPOdev.csproj.AssemblyReference.cache
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\obj\Debug\AkinNTPOdev.frmGiris.resources
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\obj\Debug\AkinNTPOdev.Properties.Resources.resources
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\obj\Debug\AkinNTPOdev.csproj.GenerateResource.cache
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\obj\Debug\AkinNTPOdev.csproj.CoreCompileInputs.cache
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\obj\Debug\AkinNTPOdev.exe
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\obj\Debug\AkinNTPOdev.pdb
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\obj\Debug\AkinNTPOdev.frmOgrenciAra.resources
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\obj\Debug\AkinNTPOdev.frmOgrenciKayit.resources
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\obj\Debug\AkinNTPOdev.frmOgretmenAra.resources
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\obj\Debug\AkinNTPOdev.frmOgretmenKayit.resources
+C:\Users\perfe\source\repos\AkinNTPOdev\AkinNTPOdev\obj\Debug\AkinNTPOdev.csproj.CopyComplete
