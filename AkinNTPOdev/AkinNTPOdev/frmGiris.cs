@@ -49,5 +49,21 @@ namespace AkinNTPOdev
             frm.Show();
             this.Hide();
         }
+
+        private void btnOgrenciGuncelle_Click(object sender, EventArgs e)
+        {
+            frmOgrenciGuncelle frm = new frmOgrenciGuncelle();
+            frm.FormClosed += (s, args) => this.Show();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnOgretmenGuncelle_Click(object sender, EventArgs e)
+        {
+            frmOgretmenGuncelle frm = new frmOgretmenGuncelle();
+            frm.FormClosed += (s, args) => this.Show();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

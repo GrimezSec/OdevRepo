@@ -71,6 +71,24 @@ namespace AkinNTPOdev.BLL
 
             return null;
         }
+
+        public bool OgrenciGuncelle(Ogrenci ogr)
+        {
+            SqlParameter[] parameters = {
+                new SqlParameter("@Ad", ogr.Ad),
+                new SqlParameter("@Soyad", ogr.Soyad),
+                new SqlParameter("@Numara", ogr.Numara),
+                new SqlParameter("@OgrenciID", ogr.OgrenciId)
+            };
+
+            return hlp.ExecuteNonQuery("UPDATE tblOgrenciler SET Ad=@Ad, Soyad=@Soyad, Numara=@Numara WHERE OgrenciID=@OgrenciID", parameters) > 0;
+        }
+
+        public bool OgrenciSil(int ogrenciID)
+        {
+            SqlParameter[] parameters = { new SqlParameter("@OgrenciID", ogrenciID) };
+            return hlp.ExecuteNonQuery("DELETE FROM tblOgrenciler WHERE OgrenciID=@OgrenciID", parameters) > 0;
+        }
     }
 
 
@@ -137,5 +155,23 @@ public class OgretmenBL
         }
 
         return null;
+    }
+
+    public bool OgretmenGuncelle(Ogretmen ogrt)
+    {
+        SqlParameter[] parameters = {
+                new SqlParameter("@Ad", ogrt.Ad),
+                new SqlParameter("@Soyad", ogrt.Soyad),
+                new SqlParameter("@TC", ogrt.TC),
+                new SqlParameter("@OgretmenId", ogrt.OgretmenId)
+            };
+
+        return hlp.ExecuteNonQuery("UPDATE tblOgretmenler SET Ad=@Ad, Soyad=@Soyad, TC=@TC WHERE OgretmenID=@OgretmenId", parameters) > 0;
+    }
+
+    public bool OgretmenSil(int ogretmenId)
+    {
+        SqlParameter[] parameters = { new SqlParameter("@OgretmenId", ogretmenId) };
+        return hlp.ExecuteNonQuery("DELETE FROM tblOgretmenler WHERE OgretmenID=@OgretmenId", parameters) > 0;
     }
 }

@@ -32,11 +32,13 @@
             this.btnOgremtenKayıt = new System.Windows.Forms.Button();
             this.btnOgrenciAra = new System.Windows.Forms.Button();
             this.btnOgretmenAra = new System.Windows.Forms.Button();
+            this.btnOgretmenGuncelle = new System.Windows.Forms.Button();
+            this.btnOgrenciGuncelle = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOgrenciKayit
             // 
-            this.btnOgrenciKayit.Location = new System.Drawing.Point(59, 72);
+            this.btnOgrenciKayit.Location = new System.Drawing.Point(64, 38);
             this.btnOgrenciKayit.Name = "btnOgrenciKayit";
             this.btnOgrenciKayit.Size = new System.Drawing.Size(153, 73);
             this.btnOgrenciKayit.TabIndex = 0;
@@ -46,7 +48,7 @@
             // 
             // btnOgremtenKayıt
             // 
-            this.btnOgremtenKayıt.Location = new System.Drawing.Point(276, 72);
+            this.btnOgremtenKayıt.Location = new System.Drawing.Point(275, 38);
             this.btnOgremtenKayıt.Name = "btnOgremtenKayıt";
             this.btnOgremtenKayıt.Size = new System.Drawing.Size(153, 73);
             this.btnOgremtenKayıt.TabIndex = 1;
@@ -56,7 +58,7 @@
             // 
             // btnOgrenciAra
             // 
-            this.btnOgrenciAra.Location = new System.Drawing.Point(59, 178);
+            this.btnOgrenciAra.Location = new System.Drawing.Point(64, 144);
             this.btnOgrenciAra.Name = "btnOgrenciAra";
             this.btnOgrenciAra.Size = new System.Drawing.Size(153, 73);
             this.btnOgrenciAra.TabIndex = 2;
@@ -66,7 +68,7 @@
             // 
             // btnOgretmenAra
             // 
-            this.btnOgretmenAra.Location = new System.Drawing.Point(276, 178);
+            this.btnOgretmenAra.Location = new System.Drawing.Point(275, 144);
             this.btnOgretmenAra.Name = "btnOgretmenAra";
             this.btnOgretmenAra.Size = new System.Drawing.Size(153, 73);
             this.btnOgretmenAra.TabIndex = 3;
@@ -74,16 +76,38 @@
             this.btnOgretmenAra.UseVisualStyleBackColor = true;
             this.btnOgretmenAra.Click += new System.EventHandler(this.btnOgretmenAra_Click);
             // 
-            // Form1
+            // btnOgretmenGuncelle
+            // 
+            this.btnOgretmenGuncelle.Location = new System.Drawing.Point(275, 250);
+            this.btnOgretmenGuncelle.Name = "btnOgretmenGuncelle";
+            this.btnOgretmenGuncelle.Size = new System.Drawing.Size(153, 73);
+            this.btnOgretmenGuncelle.TabIndex = 4;
+            this.btnOgretmenGuncelle.Text = "Öğretmen Güncelle / Sil";
+            this.btnOgretmenGuncelle.UseVisualStyleBackColor = true;
+            this.btnOgretmenGuncelle.Click += new System.EventHandler(this.btnOgretmenGuncelle_Click);
+            // 
+            // btnOgrenciGuncelle
+            // 
+            this.btnOgrenciGuncelle.Location = new System.Drawing.Point(64, 250);
+            this.btnOgrenciGuncelle.Name = "btnOgrenciGuncelle";
+            this.btnOgrenciGuncelle.Size = new System.Drawing.Size(153, 73);
+            this.btnOgrenciGuncelle.TabIndex = 5;
+            this.btnOgrenciGuncelle.Text = "Öğrenci Güncelle / Sil";
+            this.btnOgrenciGuncelle.UseVisualStyleBackColor = true;
+            this.btnOgrenciGuncelle.Click += new System.EventHandler(this.btnOgrenciGuncelle_Click);
+            // 
+            // frmGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 333);
+            this.ClientSize = new System.Drawing.Size(502, 379);
+            this.Controls.Add(this.btnOgrenciGuncelle);
+            this.Controls.Add(this.btnOgretmenGuncelle);
             this.Controls.Add(this.btnOgretmenAra);
             this.Controls.Add(this.btnOgrenciAra);
             this.Controls.Add(this.btnOgremtenKayıt);
             this.Controls.Add(this.btnOgrenciKayit);
-            this.Name = "Form1";
+            this.Name = "frmGiris";
             this.Text = "Form1";
             this.ResumeLayout(false);
 
@@ -95,6 +119,8 @@
         private System.Windows.Forms.Button btnOgremtenKayıt;
         private System.Windows.Forms.Button btnOgrenciAra;
         private System.Windows.Forms.Button btnOgretmenAra;
+        private System.Windows.Forms.Button btnOgretmenGuncelle;
+        private System.Windows.Forms.Button btnOgrenciGuncelle;
     }
 }
 
