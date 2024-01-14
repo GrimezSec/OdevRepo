@@ -8,7 +8,7 @@ function login() {
 
     if (username === sampleUsername && password === samplePassword) {
         // Giriş işlemi başarılı olduğunda tablo.html aç
-        window.location.href = "tablo.html";
+        window.location.href = "biograpy.html";
     } else {
         alert("Kullanıcı adı veya parola yanlış!");
     }

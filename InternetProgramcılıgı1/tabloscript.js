@@ -20,7 +20,7 @@ function showMultiplicationTable() {
         table += "<tr>";
         for (var j = 1; j <= 10; j++) {
             var result = i * j;
-            var cellColor = (number1 * number2 === result) ? "green" : "";
+            var cellColor = (i === number1 && j === number2) ? "green" : "";
             table += "<td style='background-color:" + cellColor + "'>" + result + "</td>";
         }
         table += "</tr>";
