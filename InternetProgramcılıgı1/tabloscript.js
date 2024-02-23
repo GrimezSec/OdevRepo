@@ -1,14 +1,22 @@
-// tabloscript.js
-document.addEventListener("DOMContentLoaded", function () {
-    showMultiplicationTable();  // Sayfa yüklendiğinde çarpım tablosunu göster
+var showResult = false;  
 
-    // Sayı 1 ve Sayı 2 input alanlarına herhangi bir değer girildiğinde çarpım tablosunu güncelle
+document.addEventListener("DOMContentLoaded", function () {
+    showMultiplicationTable();  
+
+
     document.getElementById("number1").addEventListener("input", updateMultiplicationTable);
     document.getElementById("number2").addEventListener("input", updateMultiplicationTable);
+    document.getElementById("showButton").addEventListener("click", function () {
+        showResult = true;
+        showMultiplicationTable();
+    });
 });
 
 function updateMultiplicationTable() {
-    showMultiplicationTable();  // Çarpım tablosunu güncelle
+    if (showResult) {
+        showResult = false;  
+        showMultiplicationTable(); 
+    }
 }
 
 function showMultiplicationTable() {
@@ -20,7 +28,7 @@ function showMultiplicationTable() {
         table += "<tr>";
         for (var j = 1; j <= 10; j++) {
             var result = i * j;
-            var cellColor = (i === number1 && j === number2) ? "green" : "";
+            var cellColor = (showResult && i === number1 && j === number2) ? "green" : "";
             table += "<td style='background-color:" + cellColor + "'>" + result + "</td>";
         }
         table += "</tr>";
